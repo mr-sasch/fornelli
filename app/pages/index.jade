@@ -1,0 +1,35 @@
+extends /blocks/layout-default/layout-default
+//- include /blocks/bg/bg
+include /blocks/1kak/kak
+include /blocks/1kak2/kak2
+include /blocks/2shirina45/shirina45
+include /blocks/3panel/3panel
+include /blocks/4kachestva/4kachestva
+include /blocks/5shkaf/5shkaf
+include /blocks/6kachestva2/6kachestva2
+include /blocks/7chto/7chto
+include /blocks/8pochemu/8pochemu
+include /blocks/9brend/9brend
+include /blocks/10best/10best
+include /blocks/11partneri/11partneri
+include /blocks/12knopka/12knopka
+
+block head
+	- var pageTitle = 'Fernelli';
+
+block content
+	.block-content
+		//- +bg
+		//- +1kak
+		//- +2shirina45
+		//- +3panel
+		+4kachestva
+		+5shkaf
+		//- +6kachestva2
+		//- +7chto
+		//- +8pochemu
+		//- +9brend
+		//- +10best
+		//- .knopka-bg
+		//- 	+partneri
+		//- 	+knopka

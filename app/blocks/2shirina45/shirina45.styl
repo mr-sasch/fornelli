@@ -1,0 +1,194 @@
+/* Встраиваемая техника шириной всего 45см */
+.shirina45
+	position relative
+	margin-top -400px
+	display block
+	text-align center
+
+	/* Лэйбл */
+.shirina45__label-container
+	display flex
+	justify-content flex-start
+	margin-left 200px
+.shirina45__label-width-img
+	width 100%
+	max-width 357px
+.shirina45__label
+	position relative
+	padding 25px 15px
+	display flex
+	flex-direction column
+	width 560px
+	min-height 680px
+	line-height 45px
+	text-align center
+	background-color red
+	justify-content space-around
+
+.shirina45__label-title
+	font-size 36px
+	color #fff
+
+.shirina45__label-txt
+	font-size 36px
+	color #fff
+
+.shirina45__label-question
+	font-size 48px
+	font-weight 600
+	color #fff
+	text-transform uppercase
+	/* /Лэйбл */
+
+	/* Круг */
+.shirina45__round-container
+	margin 150px 0 30px
+	text-align center
+.shirina45__round
+	position relative
+	padding 250px 0
+	display inline-block
+	width 100%
+	max-width 1200px
+.shirina45__round-center-img
+	display inline-block
+	width 34em
+
+	/* Маленькие круги */
+.shirina45__round-side
+	position absolute
+	line-height 36px
+.shirina45__round-side-txt
+	display inline-block
+	font-size 1.9em
+	line-height 1.2em
+	color #474747
+	/* Круг 1 */
+.shirina45__round-side-1
+	top 0
+	width 100%
+.shirina45__round-side-txt-1
+	margin-left 20px
+	text-align left
+	vertical-align middle
+.shirina45__round-side-img
+	width 11em
+.shirina45__round-side-img-1
+	vertical-align middle
+	/* /Круг 1 */
+	/* Круг 4 */
+.shirina45__round-side-4
+	bottom 0
+	width 100%
+.shirina45__round-side-txt-4
+	margin-right 20px
+	text-align right
+	vertical-align middle
+.shirina45__round-side-img-4
+	vertical-align middle
+	/* /Круг 4 */
+	/* Круг 2 */
+.shirina45__round-side-2
+	top 220px
+	right 0
+	width 18em
+.shirina45__round-side-img-2
+	margin auto
+	margin-bottom 20px
+	display block
+	/* /Круг 2 */
+	/* Круг 5 */
+.shirina45__round-side-5
+	left 0
+	bottom 160px
+	width 18em
+.shirina45__round-side-img-5
+	margin auto
+	margin-bottom 20px
+	display block
+	/* /Круг 5 */
+	/* Круг 6 */
+.shirina45__round-side-6
+	top 220px
+	left 0
+	width 18em
+.shirina45__round-side-img-6
+	margin auto
+	margin-bottom 20px
+	display block
+	/* /Круг 6 */
+	/* Круг 3 */
+.shirina45__round-side-3
+	right 0
+	bottom 160px
+	width 18em
+.shirina45__round-side-img-3
+	margin auto
+	margin-bottom 20px
+	display block
+	/* /Круг 3 */
+
+	/* /Маленькие круги */
+	/* /Круг */
+
+	/* Адаптация */
+@media screen and (max-width 940px)
+	.shirina45__label-container
+		justify-content center
+		margin-left 0
+		padding 0 15px
+@media screen and (max-width 1100px)
+	.shirina45__round-container
+		font-size 1.4vw
+	.shirina45__round
+		padding 25em 0
+	.shirina45__round-side-1
+		top initial
+		bottom 80%
+	.shirina45__round-side-4
+		bottom 50px
+	.shirina45__round-side-5,
+	.shirina45__round-side-3
+		top 57%
+	.shirina45__round-side-2,
+	.shirina45__round-side-6
+		bottom 49%
+		top initial
+@media screen and (max-width 700px)
+	.shirina45__round-container
+		font-weight 600
+		margin-top 0
+	.shirina45__round
+		display -webkit-flex
+		display -ms-flex
+		display flex
+		flex-wrap wrap
+		justify-content space-around
+		padding 10em 0 0
+	.shirina45__round-side
+		position relative
+		bottom 0
+		top 0
+	.shirina45__round-side-1
+		margin-bottom 15px
+		order 1
+	.shirina45__round-side-2
+		order 2
+	.shirina45__round-side-3
+		order 3
+	.shirina45__round-center-img-container
+		order 4
+	.shirina45__round-center-img
+		width 70%
+	.shirina45__round-side-5
+		order 5
+	.shirina45__round-side-6
+		order 6
+	.shirina45__round-side-4
+		order 7
+@media screen and (max-width 500px)
+	.shirina45__round-container
+		font-size 2.7vw
+
+	/* /Адаптация */
+/* /Встраиваемая техника шириной всего 45см */

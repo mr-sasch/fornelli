@@ -1,0 +1,171 @@
+/* Качества */
+.kachestva
+	position relative
+	display block
+	color #fff
+	margin-top -29em
+
+	/* Заголовок */
+.kachestva__title
+	position relative
+	height 43em
+	background-image url('../../images/4kachestva/kachestva-title.png')
+	background-size cover
+	background-position top center
+.kachestva__title-container
+	position absolute
+	bottom 85px
+	width 100%
+	text-align center
+
+.kachestva__title-left
+	margin-left -360px
+	display inline-block
+	font-size 12em
+	font-weight 600
+	line-height .7em
+	vertical-align bottom
+.kachestva__title-center
+	margin 0 0 -10px 20px
+	display inline-block
+	width 10.8em
+	font-size 3.8em
+	text-align left
+	vertical-align bottom
+.kachestva__title-right
+	vertical-align middle
+	width 1.8em
+	/* /Заголовок */
+
+	/* Ряды */
+.kachestva__row1
+	text-align right
+.kachestva__row1-img
+	position absolute
+	max-width 982px
+	width 100%
+	z-index 10
+	left 0
+.kachestva__row2-img
+	position absolute
+	max-width 984px
+	width 100%
+	z-index 10
+	right 0
+	/* /Ряды */
+
+	/* Перечень качеств */
+	/* Первый ряд */
+.kachestva__row1-items
+	position relative
+	z-index 20
+	margin-top 130px
+	display inline-block
+	width 100%
+	max-width 1316px
+	text-align center
+.kachestva__row1-item
+	margin-bottom 48px
+.kachestva__row1-item-cntnt
+	margin-left 30px
+	display inline-block
+	text-align left
+	vertical-align middle
+.kachestva__row1-item-img
+	vertical-align middle
+.kachestva__row1-item-cntnt-title
+	margin-bottom .6em
+	font-size 2.2em
+	font-weight 600
+	text-transform uppercase
+.kachestva__row1-item-cntnt-txt
+	font-size 1.9em
+	width 13em
+.kachestva__row1-item:nth-child(even)
+	margin-left 180px
+	/* Первый ряд */
+
+	/* Второй ряд */
+.kachestva__row2-items
+	position relative
+	z-index 20
+	margin-top 130px
+	display inline-block
+	width 100%
+	max-width 1060px
+	text-align center
+.kachestva__row2-item
+	margin-bottom 48px
+.kachestva__row2-item-cntnt
+	margin-right 30px
+	display inline-block
+	text-align right
+	vertical-align middle
+.kachestva__row2-item-img
+	vertical-align middle
+.kachestva__row2-item-cntnt-title
+	margin-bottom 20px
+	font-size 2.2em
+	font-weight 600
+	text-transform uppercase
+.kachestva__row2-item-cntnt-txt
+	width 13em
+	font-size 1.9em
+.kachestva__row2-item:nth-child(odd)
+	margin-left 180px
+	/* /Второй ряд */
+	/* /Перечень качеств */
+
+	/* Адаптация */
+@media screen and (max-width 1300px)
+	.kachestva__title-container
+		// font-size 1.2vw
+		bottom 130px
+		display flex
+		justify-content center
+		align-items flex-end
+		flex-wrap wrap
+	.kachestva__title-left
+		margin-left 0
+	.kachestva__title
+		height 55em
+	.kachestva
+		margin-top -44em
+@media screen and (max-width 900px)
+	.kachestva__title-container
+		bottom 143px
+	.kachestva__title-center
+		margin 0 0 10px 20px
+	.kachestva__title
+		height 68em
+	.kachestva
+		margin-top -55em
+@media screen and (max-width 800px)
+	.kachestva__row1-item:nth-child(even)
+		margin-left 0
+	.kachestva__row2-item:nth-child(odd)
+		margin-left 0
+@media screen and (max-width 700px)
+	.kachestva__title
+		height 106em
+	.kachestva
+		margin-top -70em
+@media screen and (max-width 580px)
+	.kachestva__row1-item-cntnt,
+	.kachestva__row2-item-cntnt
+		margin-top 10px
+		margin-left 0
+		margin-right 0
+		font-size 4vw
+		text-align center
+	.kachestva__row2-item
+		display flex
+		flex-direction column-reverse
+		align-items center
+		justify-content center
+@media screen and (max-width 400px)
+	.kachestva__title-center
+		font-size 3.1em
+
+	/* /Адаптация */
+/* /Качества */

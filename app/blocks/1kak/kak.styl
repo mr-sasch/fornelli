@@ -1,0 +1,115 @@
+/* КАК */
+.kak
+	position relative
+	display block
+	background-image url('../../images/1kak/kak-kuhnya.png')
+	background-size cover
+	background-position bottom
+	padding-bottom 1100px
+
+.kak__bg-img
+	position relative
+	display block
+
+.kak__ellips
+	padding 180px 120px 110px 90px
+	max-width 1343px
+	position relative
+	margin-top -124px
+	margin-left 54px
+	margin-right 54px
+
+.kak__ellips-img
+	position absolute
+	top 0
+	left 0
+	width 100%
+	height 100%
+
+	/* Большой заголовок */
+.title-big__kak
+	position relative
+	display flex
+	flex-direction row
+	flex-wrap wrap
+	align-items center
+	justify-content center
+	color #fff
+.title-big-col1
+	display inline-block
+	font-size 222px
+	line-height 156px
+	text-transform uppercase
+	font-weight 600
+.title-big-col2
+	margin-left 20px
+	display inline-block
+
+.title-big-col2-row
+	margin-bottom 13px
+	font-size 70px
+	line-height 47px
+
+.title-big-col3
+	margin-left 19px
+	display inline-block
+	margin-bottom 10px
+	/* /Большой заголовок */
+
+	/* /Вторая надпись */
+.title-big-2
+	position relative
+	padding-right 190px
+	font-size 90px
+	font-weight 600
+	color red
+	text-transform uppercase
+
+.title-big-2-row
+	position relative
+	text-align right
+
+.title-big-2-row2
+	padding-right 130px
+.title-big-2-row3
+	padding-right 260px
+	/* Вторая надпись */
+
+	/* Адаптация */
+@media screen and (max-width 1400px)
+	.kak
+		padding-bottom 600px
+	.kak__ellips
+		padding 150px 120px 70px 90px
+	.title-big-2
+		margin-top 50px
+
+@media screen and (max-width 1000px)
+	.title-big-col1
+		font-size 22vw
+		line-height 17vw
+	.title-big-col2-row
+		font-size 7vw
+		line-height 5vw
+	.title-big-2
+		padding-right 0
+		font-size 9vw
+	.title-big-2-row
+		text-align center
+	.title-big-2-row2,
+	.title-big-2-row3
+		padding-right 0
+	.title-big-col3
+		// margin-top 30px
+		width 10vw
+	.kak__ellips
+		margin-left 0
+		margin-right 0
+
+@media screen and (max-width 700px)
+	.kak__ellips
+		padding 146px 10px 60px
+	.title-big-col2
+		margin 20px 0
+	/* /Адаптация */
+/* /КАК */

@@ -1,0 +1,187 @@
+/* Выберите свою панель */
+.panel
+	padding-top 23em
+	padding-bottom 22em
+	display block
+	color #fff
+	background-image url('../../images/3panel/panel-bg.png')
+	background-size cover
+	background-position top center
+.panel__content
+	font-size .8vw
+
+	/* Заголовок */
+.panel__title
+	margin-bottom 200px
+	text-align center
+.panel__title-left
+	display inline-block
+	font-size 12em
+	font-weight 600
+	line-height 133px
+	vertical-align bottom
+	text-transform uppercase
+.panel__title-center
+	margin-bottom -6px
+	margin-left 30px
+	display inline-block
+	max-width 630px
+	font-size 3.7em
+	line-height .9em
+	text-align left
+	vertical-align bottom
+.panel__title-right
+	margin-right 25px
+	vertical-align bottom
+.panel__title-right2
+	vertical-align bottom
+	margin-top 20px
+	/* /Заголовок */
+
+	/* Блок с людьми */
+.panel__people
+	position relative
+	margin-left -13.7em
+	padding 1em 0 0 7em
+	display inline-block
+	width 48em
+	height 45em
+	text-align center
+	vertical-align top
+	background-image url('../../images/3panel/panel-ellips.png')
+	background-size cover
+.panel__people-img
+	width 20em
+.panel__people-txt
+	display inline-block
+	width 6.7em
+	font-size 2.6em
+	line-height 1.2em
+	text-align left
+	/* /Блок с людьми */
+
+	/* Блок с панелями */
+.panel__panels-container
+	display inline-block
+	width 70%
+	text-align center
+.panel__panels
+	display inline-block
+	text-align center
+	vertical-align top
+.panel__panels-1-col-panel-img
+	height 34em
+.panel__panels-title
+	margin-bottom 1.3em
+	display inline-block
+	width 9em
+	font-size 3.6em
+	font-weight 600
+	line-height 1.3em
+	text-transform uppercase
+.panel__panels-1-col
+	position relative
+	display inline-block
+	vertical-align top
+.panel__panels-1-col-label-img
+	width 9em
+.panel__panels-1-col-arrow-img
+	position absolute
+	top -9.4em
+	width 11em
+.panel__panels-1-col-arrow-img-right
+	right 3.4em
+.panel__panels-1-col-arrow-img-left
+	left 3.4em
+.panel__panels-1-col-title
+	margin-top 20px
+	font-size 1.9em
+	font-weight 600
+	line-height 36px
+	text-transform uppercase
+
+	/* Блок с доп.опциями */
+.panel__panels-1-col-dop
+	position absolute
+	right 94%
+	bottom -7.5em
+	width 27em
+	text-align justify
+.panel__panels-1-col-dop-arrow-img
+	width 12em
+.panel__panels-1-col-dop-arrow-img-cont
+	margin-bottom 2em
+	text-align right
+.panel__panels-1-col-dop-label-img
+	width 8.7em
+.panel__panels-1-col-dop-label
+	display inline-block
+	width 12.4em
+	text-align center
+.panel__panels-1-col-dop:after
+	display inline-block
+	width 100%
+	height 1px
+	content ''
+.panel__panels-1-col-dop-label-title
+	margin-top 15px
+	font-size 1.9em
+	font-weight 600
+	text-transform uppercase
+	text-align center
+	/* /Блок с доп.опциями */
+
+	/* Доп.блок со стрелкой */
+.panel__panels-1-col-panel-arrow-img
+	position absolute
+	top 89%
+	left 93%
+	width 7em
+	/* /Доп.блок со стрелкой */
+
+	/* В нужном цвете */
+.panel__panels-2-title
+	margin-bottom .8em
+	font-size 3.7em
+	font-weight 600
+	text-transform uppercase
+.panel__panels-2-col
+	display inline-block
+	width 49%
+.panel__panels-2-col-img
+	margin-right -3em
+	width 6.3em
+.panel__panels-2-col-img:first-child
+	margin-left -3em
+	/* /В нужном цвете */
+	/* /Блок с панелями */
+
+	/* Адаптация */
+@media screen and (max-width 1000px)
+	.panel
+		padding-top 250px
+	.panel__content
+		display flex
+		flex-direction column
+		justify-content center
+	.panel__panels-container
+		width 100%
+		padding-left 16em
+		font-size 1vw
+	.panel__people
+		font-size 14px
+		margin-bottom 3em
+	.panel__panels-1-col-title
+		font-size 2.9em
+	.panel__panels-1-col-dop-label-title
+		font-size 2.4em
+
+@media screen and (max-width 500px)
+	.panel__title
+		font-size 3.1vw
+	.panel__people
+		font-size 2.3vw
+
+	/* /Адаптация */
+
+/* /Выберите свою панель */
