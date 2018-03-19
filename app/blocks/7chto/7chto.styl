@@ -14,7 +14,7 @@
 	color #fff
 .chto__title-chto
 	display inline-block
-	font-size 190px
+	font-size 12em
 	font-weight 600
 	vertical-align middle
 	text-transform uppercase
@@ -45,6 +45,9 @@ img.chto__title-img
 	font-size 36px
 	line-height 47px
 	color greyTxt
+.chto__item-img
+	width 100%
+	max-width 261px
 	/* /Айтемы */
 
 	/* Дополнение */
@@ -69,14 +72,59 @@ img.chto__title-img
 	max-width 600px
 
 .chto__ready-text-title
-	font-size 50px
+	font-size 3em
 	font-weight 600
-	line-height 72px
+	line-height 1.5em
 	text-align right
 	color red30
 	text-transform uppercase
 
-img.chto__ready-img
+.chto__ready-img
 	margin-top -25px
 	/* /Готовые комплекты */
+
+/* Адаптация */
+@media screen and (max-width 1300px)
+	.chto__ready
+		text-align center
+	.chto__ready-text
+		position relative
+		display inline-block
+		left inherit
+
+@media screen and (max-width 840px)
+	.chto__item
+		width 50%
+
+@media screen and (max-width 600px)
+	.chto__ready-text-title
+		font-size 8vw
+	.chto__ready-img
+		width 100%
+	.chto__stars
+		line-height 40px
+	.chto__ready
+		height 172vw
+		background-position center
+	.chto__ready-text
+		top 46vw
+	.chto
+		margin-top 40vw
+
+@media screen and (max-width 400px)
+	.chto__title-chto
+		font-size 46vw
+	.chto__title-txt
+		margin 0 0 30px 0
+		font-size 45px
+		line-height 40px
+
+@media screen and (max-width 370px)
+	.chto__item
+		width 70%
+
+
+
+/* /Адаптация */
+
 /* /Что */

@@ -74,8 +74,47 @@
 
 .best__winner-img
 	position relative
-
-
 	/* /Победители */
+
+	/* Адаптация */
+@media screen and (max-width 1600px)
+	.best__content
+		flex-wrap wrap
+		justify-content space-around
+	.best__winners
+		margin-top 280px
+
+@media screen and (max-width 900px)
+	.best__objects
+		display flex
+		flex-wrap wrap
+		justify-content space-around
+	.best__object-2
+		position relative
+		top 105px
+		left inherit
+
+@media screen and (max-width 650px)
+	.best__title
+		font-size 15.4vw
+	.best__object
+		width 100%
+		text-align center
+	.best__object.best__object-img
+		width 80%
+	.best__winner-txt
+		left 0
+		position relative
+		margin-top 20px
+	.best__winners
+		text-align center
+	.best__winner
+		display inline-block
+	.best__object-title-1,
+	.best__object-title-2
+		position relative
+		margin-top -35px
+		left 0
+	/* /Адаптация */
 
 /* /BEST */

@@ -1,6 +1,7 @@
 /* Бренд */
 .brand
-	padding 230px 0
+	margin-top 200px
+	padding 230px 0 230px
 	display block
 	background url('../../images/9brend/brand-bg.png') no-repeat
 	background-size cover
@@ -8,9 +9,12 @@
 .brand__title
 	margin auto
 	display flex
+	flex-wrap wrap
 	max-width 1030px
 	justify-content space-between
 	vertical-align middle
+
+
 .brand__title-text
 	max-width 540px
 	font-size 50px
@@ -29,7 +33,34 @@
 .brand__info
 	margin auto
 	display flex
+	flex-wrap wrap
 	max-width 1160px
 	justify-content space-between
 	/* /Граафики */
+
+/* Адаптация */
+@media screen and (max-width 1000px)
+	.brand__title
+		justify-content space-around
+		align-items center
+	.brand__info
+		justify-content space-around
+	.brand
+		margin-top -100px
+		padding-top 400px
+
+@media screen and (max-width 700px)
+	.brand
+		margin-top -300px
+
+
+@media screen and (max-width 500px)
+	.brand__info-item-info
+		width 100%
+	.brand__title-img
+		width 100%
+	.brand__title-text
+		font-size 44px
+/* /Адаптация */
+
 /* /Бренд */
