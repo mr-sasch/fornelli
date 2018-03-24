@@ -49,12 +49,18 @@ document.onscroll = function() {
 }
 
 /* Качества */
-var kachestvaFrame = document.getElementById('kachestva__row1-item-cntnt-frame');
-kachestvaFrame.style.width = windowWidth + 'px';
+var windowWidth = document.documentElement.clientWidth;
+var kachestvaFrame = document.getElementsByClassName('kachestva__row1-item-cntnt-frame');
+for(i=0;i<kachestvaFrame.length; i++) {
+  kachestvaFrame[i].style.width = windowWidth + 'px';
+}
 
 document.body.onresize = function() {
   var windowWidth = document.documentElement.clientWidth;
-  kachestvaFrame.style.width = windowWidth + 'px';
+  var kachestvaFrame = document.getElementsByClassName('kachestva__row1-item-cntnt-frame');
+  for(i=0;i<kachestvaFrame.length; i++) {
+    kachestvaFrame[i].style.width = windowWidth + 'px';
+  }
 }
 /* /Качества */
 
