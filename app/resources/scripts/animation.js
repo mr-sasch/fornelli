@@ -39,6 +39,14 @@ document.onscroll = function() {
   if(kachestvaCntntCoords.top < activateAnimate) {kachestvaCntnt.classList.remove("animate-it")};
   if(kachestvaCntntCoords.top > activateAnimate) {kachestvaCntnt.classList.add("animate-it")};
 
+  var chtoCoords = chto.getBoundingClientRect();
+  if(chtoCoords.top < activateAnimate) {chto.classList.remove("animate-it")};
+  if(chtoCoords.top > activateAnimate) {chto.classList.add("animate-it")};
+
+  var pochemuCoords = pochemu.getBoundingClientRect();
+  if(pochemuCoords.top < activateAnimate) {pochemu.classList.remove("animate-it")};
+  if(pochemuCoords.top > activateAnimate) {pochemu.classList.add("animate-it")};
+
   var brandCoords = brand.getBoundingClientRect();
   if(brandCoords.top < activateAnimate) {brand.classList.remove("animate-it")};
   if(brandCoords.top > activateAnimate) {brand.classList.add("animate-it")};
@@ -82,5 +90,23 @@ document.body.onresize = function() {
 
 }
 /* /Качества */
+
+/* что */
+var chtoText = document.getElementsByClassName('chto__item-text');
+var chtoTextHeight = chtoText[0].clientHeight;
+var chtoFrame = document.getElementsByClassName('chto__text-frame');
+for(i=0; i<chtoFrame.length; i++) {
+  chtoFrame[i].style.height = chtoTextHeight + 'px';
+}
+/* /что */
+
+/* почему */
+var pochemuText = document.getElementsByClassName('pochemu-title-item-txt');
+var pochemuFrame = document.getElementsByClassName('pochemu-frame');
+for(i=0; i<pochemuFrame.length; i++) {
+  pochemuFrame[i].style.height = pochemuText[i].clientHeight + 'px';
+}
+
+/* /почему */
 
 // /Ширина
