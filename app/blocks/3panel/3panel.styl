@@ -5,8 +5,8 @@
 	display block
 	color #fff
 	background-image url('../../images/3panel/panel-bg.png')
-	background-size cover
 	background-position top center
+	background-size cover
 .panel__content
 	font-size .8vw
 
@@ -34,22 +34,31 @@
 	margin-right 25px
 	vertical-align bottom
 .panel__title-right2
-	vertical-align bottom
 	margin-top 20px
+	vertical-align bottom
 	/* /Заголовок */
 
 	/* Блок с людьми */
+.panel-people__frame
+	background-image url('../../images/3panel/panel-ellips.png')
+	background-size cover
+	position absolute
+	height 100%
+	width 100%
+	top 0
+	left 0
+	padding 1em 0 0 7em
+	transition .3s ease
+
 .panel__people
 	position relative
 	margin-left -13.7em
-	padding 1em 0 0 7em
 	display inline-block
 	width 48em
 	height 45em
 	text-align center
 	vertical-align top
-	background-image url('../../images/3panel/panel-ellips.png')
-	background-size cover
+	overflow hidden
 .panel__people-img
 	width 20em
 .panel__people-txt
@@ -103,10 +112,10 @@
 	/* Блок с доп.опциями */
 .panel__panels-1-col-dop
 	position absolute
-	right 94%
-	bottom -7.5em
 	width 27em
 	text-align justify
+	bottom -7.5em
+	right 94%
 .panel__panels-1-col-dop-arrow-img
 	width 12em
 .panel__panels-1-col-dop-arrow-img-cont
@@ -140,6 +149,8 @@
 	/* /Доп.блок со стрелкой */
 
 	/* В нужном цвете */
+.panel__panels-2.panel__panels-2-mob
+	display none
 .panel__panels-2-title
 	margin-bottom .8em
 	font-size 3.7em
@@ -158,6 +169,12 @@
 
 	/* Адаптация */
 @media screen and (max-width 1000px)
+	.panel__title
+		margin-bottom 50px
+	.panel__panels-2-title
+		font-size 30px
+	.panel__panels-2.panel__panels-2-mob
+		display block
 	.panel
 		padding-top 250px
 	.panel__content
@@ -166,21 +183,65 @@
 		justify-content center
 	.panel__panels-container
 		width 100%
-		padding-left 16em
-		font-size 1vw
+		font-size 15px
 	.panel__people
-		font-size 14px
 		margin-bottom 3em
+		font-size 14px
 	.panel__panels-1-col-title
 		font-size 2.9em
 	.panel__panels-1-col-dop-label-title
 		font-size 2.4em
+
+	.panel__panels-1-col-arrow-img-right,
+	.panel__panels-1-col-arrow-img-left,
+	.panel__panels-1-col-panel-arrow-img,
+	.panel__panels-1-col-dop-arrow-img
+		display none
+
+	.panel__panels-1-col-dop
+		position relative
+		right inherit
+		bottom inherit
+		width inherit
+
+	.panel__panels-1
+		display flex
+		flex-direction column
+
+	.panel__panels-title
+		width 100%
+
+	.panel__panels-1-col-dop
+		margin-top 65px
+		margin-bottom 100px
+		display flex
+		justify-content space-around
+		flex-direction row
+	.panel__panels-1-col-dop:after,
+	.panel__panels-1-col-dop-arrow-img-cont
+		display none
+	.panel__panels-1-col-dop-label
+		width inherit
+	.panel__panels-1-col-panel-img
+		margin-bottom -30px
+
+	.panel__panels-2
+		display none
 
 @media screen and (max-width 500px)
 	.panel__title
 		font-size 3.1vw
 	.panel__people
 		font-size 2.3vw
+	.panel__panels-1-col-panel-img
+		width 100%
+		height auto
+	.panel__panels-1-col-title
+		font-size 30px
+	.panel__panels-title
+		font-size 50px
+	.panel__panels-1-col-dop
+		font-size 3vw
 
 	/* /Адаптация */
 

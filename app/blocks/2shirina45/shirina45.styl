@@ -3,13 +3,12 @@
 	position relative
 	margin-top -400px
 	display block
-	text-align center
+	text-align left
 
 	/* Лэйбл */
 .shirina45__label-container
-	display flex
-	justify-content flex-start
 	margin-left 200px
+	display inline-block
 .shirina45__label-width-img
 	width 100%
 	max-width 357px
@@ -18,7 +17,7 @@
 	padding 25px 15px
 	display flex
 	flex-direction column
-	width 560px
+	// width 560px
 	min-height 680px
 	line-height 45px
 	text-align center
@@ -136,7 +135,11 @@
 	.shirina45__label-container
 		justify-content center
 		margin-left 0
+	.shirina45
 		padding 0 15px
+	.shirina45__round-container
+		margin-right -15px
+		margin-left -15px
 @media screen and (max-width 1100px)
 	.shirina45__round-container
 		font-size 1.4vw
@@ -152,23 +155,21 @@
 		top 57%
 	.shirina45__round-side-2,
 	.shirina45__round-side-6
-		bottom 49%
 		top initial
+		bottom 49%
 @media screen and (max-width 700px)
 	.shirina45__round-container
-		font-weight 600
 		margin-top 0
+		font-weight 600
 	.shirina45__round
-		display -webkit-flex
-		display -ms-flex
 		display flex
 		flex-wrap wrap
 		justify-content space-around
 		padding 10em 0 0
 	.shirina45__round-side
 		position relative
-		bottom 0
 		top 0
+		bottom 0
 	.shirina45__round-side-1
 		margin-bottom 15px
 		order 1

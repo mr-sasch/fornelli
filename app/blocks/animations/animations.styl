@@ -1,0 +1,155 @@
+/* Анимации */
+  /* ширина 45 */
+  /* label */
+.shirina45__label-container
+  overflow hidden
+  transition .5s ease
+.shirina45__label
+  margin-left 0
+  transition .5s ease
+  /* /label */
+
+  /* круг */
+.shirina45__round-side
+  opacity 1
+  z-index 10
+  transition .3s ease
+  /* круг1 */
+.shirina45__round-side-1
+  top 0
+  transform translateY(0)
+  transition .3s ease
+  /* круг2 */
+
+.shirina45__round-side-2
+  transform translate(0, 0)
+  transition .3s ease
+  /* круг3 */
+
+.shirina45__round-side-3
+  transform translate(0, 0)
+  transition .3s ease
+  /* круг4 */
+
+.shirina45__round-side-4
+  transform translate(0)
+  transition .3s ease
+  /* круг5 */
+.animate-it
+  .shirina45__label
+    margin-left -520px
+  .shirina45__round-side
+    opacity 0
+    transition .3s ease
+  .shirina45__round-side-1
+    top 50%
+    transform translateY(-50%)
+  .shirina45__round-side-2
+    top 50%
+    right 50%
+    transform translate(50%, -50%)
+  .shirina45__round-side-3
+    bottom 50%
+    right 50%
+    transform translate(50%, 50%)
+  .shirina45__round-side-4
+    bottom 50%
+    transform translateY(50%)
+  .shirina45__round-side-5
+    bottom 50%
+    left 50%
+    transform translate(-50%, 50%)
+  .shirina45__round-side-6
+    top 50%
+    left 50%
+    transform translate(-50%, -50%)
+.shirina45__round-side-5
+  transform translate(0, 0)
+  transition .3s ease
+  /* круг6 */
+
+.shirina45__round-side-6
+  transform translate(0, 0)
+  transition .3s ease
+  /* центральный */
+.shirina45__round-center-img-container
+  z-index 20
+  position relative
+  /* /круг */
+  /* /ширина 45 */
+
+  /* блок с людьми */
+.animate-it
+  .panel-people__frame
+    left -600px
+
+.panel-people
+  overflow hidden
+  transition .3s .5s ease
+  /* /блок с людьми */
+
+  /* качества */
+.kachestva__row1-item-cntnt-frame
+  position absolute
+  max-width 440px
+  height 100%
+  top 0
+  left 0
+  display flex
+  flex-direction column
+  justify-content center
+.kachestva__frame-hide
+  position absolute
+  width 100%
+  height 100%
+  left 0
+  overflow hidden
+
+  /* 1блок */
+.animate-it .kachestva__row1-img
+  left -1000px
+  transition .5s .5s ease
+.kachestva__row1-img
+  left 0
+  transition .5s .5s ease
+
+.animate-it .kachestva__frame-hide
+  width 0
+  transition .3s 1s ease
+.kachestva__frame-hide
+  transition .3s 1s ease
+  width 100%
+
+  /* 2блок */
+.animate-it .kachestva__row2-img
+  right -1000px
+  transition .5s .5s ease
+.kachestva__row2-img
+  right 0
+  transition .5s .5s ease
+
+.animate-it .kachestva__row2-item
+  opacity 0
+  transition .3s 1s ease
+.kachestva__row2-item
+  opacity 1
+  transition .3s 1s ease
+  /* /качества */
+
+  /* качества2 */
+.animate-it
+  .kachestva2__cntnt-col-1
+    left -1000px
+    transition .3s ease
+.kachestva2__cntnt-col-1
+  transition .3s ease
+.animate-it
+  .kachestva2__cntnt-col-2
+    opacity 0
+    transition .3s .6s ease
+.kachestva2__cntnt-col-2
+  opacity 1
+  transition .3s .6s ease
+  /* /качества2 */
+
+/* /Анимации */

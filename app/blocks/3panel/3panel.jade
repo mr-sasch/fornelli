@@ -10,10 +10,11 @@ mixin 3panel()
 		// Контент
 		.panel__content
 			// Блок с людьми
-			.panel__people
-				img.panel__people-img(src='../../images/3panel/panel-ellips-people.png')
-				.panel__people-txt-cont
-					.panel__people-txt 9 из 10-ти потребителей используют не более 3-х конфорок ежедневно
+			.panel__people#panel-people
+				.panel-people__frame
+					img.panel__people-img(src='../../images/3panel/panel-ellips-people.png')
+					.panel__people-txt-cont
+						.panel__people-txt 9 из 10-ти потребителей используют не более 3-х конфорок ежедневно
 			// Блок с панелями
 			.panel__panels-container
 				.panel__panels
@@ -25,6 +26,12 @@ mixin 3panel()
 							img.panel__panels-1-col-label-img(src='../../images/3panel/panel-small-round1.png')
 							.panel__panels-1-col-title Электрическую
 							img.panel__panels-1-col-panel-img(src='../../images/3panel/panel-panel-electro.png')
+							// В нужном цвете - моб. электро
+							.panel__panels-2.panel__panels-2-mob
+								.panel__panels-2-title В нужном цвете
+								.panel__panels-2-col
+									img.panel__panels-2-col-img.panel__panels-2-col-img1(src='../../images/3panel/panel-round-color1.png')
+									img.panel__panels-2-col-img.panel__panels-2-col-img2(src='../../images/3panel/panel-round-color2.png')
 							// Блок с доп.опциями
 							.panel__panels-1-col-dop
 								.panel__panels-1-col-dop-arrow-img-cont
@@ -41,6 +48,14 @@ mixin 3panel()
 							img.panel__panels-1-col-label-img(src='../../images/3panel/panel-small-round2.png')
 							.panel__panels-1-col-title Газовую
 							img.panel__panels-1-col-panel-img(src='../../images/3panel/panel-panel-gaz.png')
+							// В нужном цвете - моб. газ
+							.panel__panels-2.panel__panels-2-mob
+								.panel__panels-2-title В нужном цвете
+								.panel__panels-2-col
+									img.panel__panels-2-col-img.panel__panels-2-col-img3(src='../../images/3panel/panel-round-color3.png')
+									img.panel__panels-2-col-img.panel__panels-2-col-img4(src='../../images/3panel/panel-round-color4.png')
+									img.panel__panels-2-col-img.panel__panels-2-col-img5(src='../../images/3panel/panel-round-color5.png')
+									img.panel__panels-2-col-img.panel__panels-2-col-img6(src='../../images/3panel/panel-round-color6.png')
 							// Доп.блок со стрелкой
 							img.panel__panels-1-col-panel-arrow-img(src='../../images/3panel/panel-arrow4.png')
 					// В нужном цвете
