@@ -49,18 +49,37 @@ document.onscroll = function() {
 }
 
 /* Качества */
+/* 1) */
 var windowWidth = document.documentElement.clientWidth;
 var kachestvaFrame = document.getElementsByClassName('kachestva__row1-item-cntnt-frame');
 for(i=0;i<kachestvaFrame.length; i++) {
   kachestvaFrame[i].style.width = windowWidth + 'px';
 }
 
+/* 2) */
+var kachestva2Frame = document.getElementsByClassName('kachestva__row1-item-cntnt-frame2');
+var frameHide2 = document.getElementsByClassName('kachestva__row2-item-cntnt');
+
+for(i=0;i<kachestva2Frame.length; i++) {
+  kachestva2Frame[i].style.width = windowWidth + 'px';
+  frameHide2[i].style.maxWidth = windowWidth + 'px';
+
+}
 document.body.onresize = function() {
+  /* 1) */
   var windowWidth = document.documentElement.clientWidth;
   var kachestvaFrame = document.getElementsByClassName('kachestva__row1-item-cntnt-frame');
   for(i=0;i<kachestvaFrame.length; i++) {
     kachestvaFrame[i].style.width = windowWidth + 'px';
   }
+
+  /* 2) */
+  var windowWidth = document.documentElement.clientWidth;
+  for(i=0;i<kachestva2Frame.length; i++) {
+    kachestva2Frame[i].style.width = windowWidth + 'px';
+    frameHide2[i].style.maxWidth = windowWidth + 'px';
+  };
+
 }
 /* /Качества */
 
