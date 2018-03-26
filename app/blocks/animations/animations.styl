@@ -36,6 +36,33 @@
   transition .3s ease
   /* круг5 */
 .animate-it
+  .kachestva__frame-hide
+    width 0
+    transition .3s 1s ease
+  .kachestva__row2-img
+    right -1000px
+    transition .5s .5s ease
+  .kachestva__row1-img
+    left -1000px
+    transition .5s .5s ease
+  .kachestva__frame-hide2
+    width 0
+    transition .3s 1s ease
+  .kachestva2__cntnt-col-1
+    left -1000px
+    transition .3s ease
+  .kachestva2__cntnt-col-2
+    opacity 0
+    transition .3s .6s ease
+  .chto__item-img
+    opacity 0
+    transition .3s ease
+  .chto__text-hide
+    height 0
+    transition .3s .5s ease
+  .pochemu-title-item-img
+    opacity 0
+    transition .3s ease
   .shirina45__label
     margin-left -520px
   .shirina45__round-side
@@ -63,6 +90,11 @@
     top 50%
     left 50%
     transform translate(-50%, -50%)
+  .pochemu-hide
+    height 0
+    transition .3s .5s ease
+  .panel-people__frame
+    left -600px
 .shirina45__round-side-5
   transform translate(0, 0)
   transition .3s ease
@@ -79,9 +111,6 @@
   /* /ширина 45 */
 
   /* блок с людьми */
-.animate-it
-  .panel-people__frame
-    left -600px
 
 .panel-people
   overflow hidden
@@ -103,31 +132,17 @@
   width 100%
   height 100%
   left 0
+  transition .3s 1s ease
   overflow hidden
 
   /* 1блок */
-.animate-it .kachestva__row1-img
-  left -1000px
-  transition .5s .5s ease
 .kachestva__row1-img
   left 0
   transition .5s .5s ease
-
-.animate-it .kachestva__frame-hide
-  width 0
-  transition .3s 1s ease
-.kachestva__frame-hide
-  transition .3s 1s ease
-  width 100%
-
   /* 2блок */
-.animate-it .kachestva__row2-img
-  right -1000px
-  transition .5s .5s ease
 .kachestva__row2-img
   right 0
   transition .5s .5s ease
-
 
 .kachestva__row1-item-cntnt-frame2
   position absolute
@@ -144,40 +159,19 @@
   height 100%
   right 0
   overflow hidden
-
-.animate-it .kachestva__frame-hide2
-  width 0
   transition .3s 1s ease
-.kachestva__frame-hide2
-  transition .3s 1s ease
-  width 100%
-  overflow hidden
-.kachestva__row1-item-cntnt-frame2
-  max-width 440px
 
   /* /качества */
 
   /* качества2 */
-.animate-it
-  .kachestva2__cntnt-col-1
-    left -1000px
-    transition .3s ease
 .kachestva2__cntnt-col-1
   transition .3s ease
-.animate-it
-  .kachestva2__cntnt-col-2
-    opacity 0
-    transition .3s .6s ease
 .kachestva2__cntnt-col-2
   opacity 1
   transition .3s .6s ease
   /* /качества2 */
 
   /* что */
-.animate-it
-  .chto__item-img
-    opacity 0
-    transition .3s ease
 .chto__item-img
   opacity 1
   transition .3s ease
@@ -193,18 +187,9 @@
   top 0
   overflow hidden
   transition .3s 1s ease
-
-.animate-it
-  .chto__text-hide
-    height 0
-    transition .3s .5s ease
   /* /что */
 
   /* почему */
-.animate-it
-  .pochemu-title-item-img
-    opacity 0
-    transition .3s ease
 .pochemu-title-item-img
   opacity 1
   transition .3s ease
@@ -220,11 +205,19 @@
   overflow hidden
   transition .3s .5s ease
 
-.animate-it
-  .pochemu-hide
-    height 0
-    transition .3s .5s ease
 
   /* /почему */
+
+  /* понели */
+.z20
+  z-index 20
+.panel__panels-1-col-panels
+  position relative
+.panel__panels-1-col-panel-img-2
+  position absolute
+  left 0
+  top 0
+
+  /* /понели */
 
 /* /Анимации */

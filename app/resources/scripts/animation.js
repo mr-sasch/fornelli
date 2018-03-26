@@ -17,7 +17,7 @@ var best = document.getElementById('best__content');
 document.onscroll = function() {
   var shirinaCoords = shirina45container.getBoundingClientRect();
   if(shirinaCoords.top < activateAnimate) {shirina45container.classList.remove("animate-it")};
-  if(shirinaCoords.top > activateAnimate) {shirina45container.classList.add("animate-it")};
+  // if(shirinaCoords.top > activateAnimate) {shirina45container.classList.add("animate-it")};
 
   var shirina45roundCoords = shirina45round.getBoundingClientRect();
   if(shirina45roundCoords.top < activateAnimate) {shirina45round.classList.remove("animate-it")};
@@ -139,5 +139,29 @@ $(document).ready(function(){
    ]
   });
 });
-
 /* /Слайдер */
+
+/* В нужном цвете - переключатель */
+var panelElectro = document.getElementById('panel-electro');
+var electroLabel = null;
+var electroZ20 = document.getElementsByClassName('z20');
+var panelElectroImg = document.getElementsByClassName('panel-electro-img');
+panelElectro.onclick = function(event) {
+  if(electroZ20) {
+    for(i=0;i<electroZ20.length; i++) {
+      electroZ20[i].classList.remove('z20');
+    }
+    electroLabel = null;
+  }
+  var target = event.target;
+  console.log(target.tagName);
+  if(target.tagName == 'IMG') {
+    console.log(target);
+    if(!electroLabel) {
+      target.classList.add('z20');
+      electroLabel = target;
+    }
+  }
+}
+
+/* /В нужном цвете - переключатель */
