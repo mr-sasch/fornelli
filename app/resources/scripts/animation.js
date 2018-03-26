@@ -110,3 +110,34 @@ for(i=0; i<pochemuFrame.length; i++) {
 /* /почему */
 
 // /Ширина
+
+/* Слайдер */
+$(document).ready(function(){
+  $('.partneri__slider-content').slick({
+    slidesToShow: 5,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    responsive: [
+     {
+       breakpoint: 1100,
+       settings: {
+         slidesToShow: 4
+       }
+     },
+     {
+       breakpoint: 900,
+       settings: {
+         slidesToShow: 3
+       }
+     },
+     {
+       breakpoint: 650,
+       settings: {
+         slidesToShow: 1
+       }
+     }
+   ]
+  });
+});
+
+/* /Слайдер */
