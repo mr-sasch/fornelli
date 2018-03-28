@@ -25,15 +25,15 @@ mixin 3panel()
 							img.panel__panels-1-col-arrow-img.panel__panels-1-col-arrow-img-left(src='../../images/3panel/panel-arrow1.png')
 							img.panel__panels-1-col-label-img(src='../../images/3panel/panel-small-round1.png')
 							.panel__panels-1-col-title Электрическую
-							.panel__panels-1-col-panels#panel__panels-1-col-panels
-								img.panel__panels-1-col-panel-img.panel-electro-img(src='../../images/3panel/delizia_wh.png')
-								img.panel__panels-1-col-panel-img.panel-electro-img.panel__panels-1-col-panel-img-2(src='../../images/3panel/delizia_off.png')
+							.panel__panels-1-col-panel-cont
+								img.panelElectroImg.panel__panels-1-col-panel-cont-img(src='../../images/3panel/delizia_off.png')
+								img.panelElectroImg.panel__panels-1-col-panel-cont-img.posa(src='../../images/3panel/delizia_wh.png' style='opacity: 1;')
 							// В нужном цвете - моб. электро
 							.panel__panels-2.panel__panels-2-mob
 								.panel__panels-2-title В нужном цвете
-								.panel__panels-2-col
-									img.panel__panels-2-col-img.panel__panels-2-col-img1.panel__panels-2-col-img(src='../../images/3panel/panel-round-color1.png')
-									img.panel__panels-2-col-img.panel__panels-2-col-img2(src='../../images/3panel/panel-round-color2.png')
+								.panel__panels-2-col#panelElectroLabelMob
+									img.panelElectroLabelMob.panel__panels-2-col-img.panel__panels-2-col-img1(src='../../images/3panel/panel-round-color1.png')
+									img.panelElectroLabelMob.panel__panels-2-col-img.panel__panels-2-col-img2.z20(src='../../images/3panel/panel-round-color2.png')
 							// Блок с доп.опциями
 							.panel__panels-1-col-dop
 								.panel__panels-1-col-dop-arrow-img-cont
@@ -49,26 +49,30 @@ mixin 3panel()
 							img.panel__panels-1-col-arrow-img.panel__panels-1-col-arrow-img-right(src='../../images/3panel/panel-arrow2.png')
 							img.panel__panels-1-col-label-img(src='../../images/3panel/panel-small-round2.png')
 							.panel__panels-1-col-title Газовую
-							img.panel__panels-1-col-panel-img(src='../../images/3panel/panel-panel-gaz.png')
+							.panel__panels-1-col-panel-cont
+								img.panel__panels-1-col-panel-cont-img.panelImgGas(src='../../images/3panel/fiero45-black.png')
+								img.panel__panels-1-col-panel-cont-img.panelImgGas.posa(src='../../images/3panel/fiero45-grey.png')
+								img.panel__panels-1-col-panel-cont-img.panelImgGas.posa(src='../../images/3panel/fiero45-blue.png')
+								img.panel__panels-1-col-panel-cont-img.panelImgGas.posa(src='../../images/3panel/fiero45-yello.png' style='opacity: 1;')
 							// В нужном цвете - моб. газ
 							.panel__panels-2.panel__panels-2-mob
 								.panel__panels-2-title В нужном цвете
-								.panel__panels-2-col
-									img.panel__panels-2-col-img.panel__panels-2-col-img3(src='../../images/3panel/panel-round-color3.png')
-									img.panel__panels-2-col-img.panel__panels-2-col-img4(src='../../images/3panel/panel-round-color4.png')
-									img.panel__panels-2-col-img.panel__panels-2-col-img5(src='../../images/3panel/panel-round-color5.png')
-									img.panel__panels-2-col-img.panel__panels-2-col-img6(src='../../images/3panel/panel-round-color6.png')
+								.panel__panels-2-col#panelGasLabelMob
+									img.panelGasLabelMob.panel__panels-2-col-img.panel__panels-2-col-img3(src='../../images/3panel/panel-round-color3.png')
+									img.panelGasLabelMob.panel__panels-2-col-img.panel__panels-2-col-img4(src='../../images/3panel/panel-round-color4.png')
+									img.panelGasLabelMob.panel__panels-2-col-img.panel__panels-2-col-img5(src='../../images/3panel/panel-round-color5.png')
+									img.panelGasLabelMob.panel__panels-2-col-img.panel__panels-2-col-img6(src='../../images/3panel/panel-round-color6.png')
 							// Доп.блок со стрелкой
 							img.panel__panels-1-col-panel-arrow-img(src='../../images/3panel/panel-arrow4.png')
-					// В нужном цвете - Десктопная
+					// В нужном цвете
 					.panel__panels-2
 						.panel__panels-2-title В нужном цвете
-						.panel__panels-2-col#panel-electro
-							img.panel__panels-2-col-img.panel__panels-2-col-img1.panel-electro(src='../../images/3panel/panel-round-color1.png')
-							img.panel__panels-2-col-img.panel__panels-2-col-img2.panel-electro.z20(src='../../images/3panel/panel-round-color2.png')
-						.panel__panels-2-col
-							img.panel__panels-2-col-img.panel__panels-2-col-img3.panel-gas(src='../../images/3panel/panel-round-color3.png')
-							img.panel__panels-2-col-img.panel__panels-2-col-img4.panel-gas(src='../../images/3panel/panel-round-color4.png')
-							img.panel__panels-2-col-img.panel__panels-2-col-img5.panel-gas(src='../../images/3panel/panel-round-color5.png')
-							img.panel__panels-2-col-img.panel__panels-2-col-img6.panel-gas(src='../../images/3panel/panel-round-color6.png')
+						.panel__panels-2-col#panelElectroLabel
+							img.panelElectroLabel.panel__panels-2-col-img.panel__panels-2-col-img1(src='../../images/3panel/panel-round-color1.png')
+							img.panelElectroLabel.panel__panels-2-col-img.panel__panels-2-col-img2.z20(src='../../images/3panel/panel-round-color2.png')
+						.panel__panels-2-col#panelLabelGas
+							img.panelLabelGas.panel__panels-2-col-img.panel__panels-2-col-img3(src='../../images/3panel/panel-round-color3.png')
+							img.panelLabelGas.panel__panels-2-col-img.panel__panels-2-col-img4(src='../../images/3panel/panel-round-color4.png')
+							img.panelLabelGas.panel__panels-2-col-img.panel__panels-2-col-img5(src='../../images/3panel/panel-round-color5.png')
+							img.panelLabelGas.panel__panels-2-col-img.panel__panels-2-col-img6.z20(src='../../images/3panel/panel-round-color6.png')
 							

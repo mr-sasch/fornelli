@@ -80,6 +80,21 @@
 	vertical-align top
 .panel__panels-1-col-panel-img
 	height 34em
+.panel__panels-1-col-panel-cont
+	// padding 4.9em
+	width 29.7em
+	height 34em
+	font-size .8vw
+	display -webkit-flex
+	display -ms-flex
+	display flex
+	justify-content center
+	align-items center
+.panel__panels-1-col-panel-cont-img
+	width 80%
+	opacity 0
+	transition .2s ease
+
 .panel__panels-title
 	margin-bottom 1.3em
 	display inline-block
@@ -171,6 +186,12 @@
 
 	/* Адаптация */
 @media screen and (max-width 1000px)
+	.panel__panels-1-col-panel-cont
+		width inherit
+		height auto
+		padding 5em 0
+	.panel__panels-2-col-img
+		width 6em
 	.panel__title
 		margin-bottom 50px
 	.panel__panels-2-title

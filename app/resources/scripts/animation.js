@@ -142,26 +142,87 @@ $(document).ready(function(){
 /* /Слайдер */
 
 /* В нужном цвете - переключатель */
-var panelElectro = document.getElementById('panel-electro');
-var electroLabel = null;
-var electroZ20 = document.getElementsByClassName('z20');
-var panelElectroImg = document.getElementsByClassName('panel-electro-img');
-panelElectro.onclick = function(event) {
-  if(electroZ20) {
-    for(i=0;i<electroZ20.length; i++) {
-      electroZ20[i].classList.remove('z20');
-    }
-    electroLabel = null;
-  }
+  /* электро */
+var panelElectroLabel = document.getElementById('panelElectroLabel');
+var panelElectroLabelClass = document.getElementsByClassName('panelElectroLabel');
+var panelElectroImgClass = document.getElementsByClassName('panelElectroImg');
+
+panelElectroLabel.onclick = function(event) {
   var target = event.target;
-  console.log(target.tagName);
-  if(target.tagName == 'IMG') {
-    console.log(target);
-    if(!electroLabel) {
-      target.classList.add('z20');
-      electroLabel = target;
+  for(var i=0; i<panelElectroLabelClass.length; i++) {
+    panelElectroLabelClass[i].classList.remove('z20');
+    panelElectroImgClass[i].style.opacity = '0';
+  }
+  for(var i=0; i<panelElectroLabelClass.length; i++) {
+    if(panelElectroLabelClass[i] == target) {
+      panelElectroLabelClass[i].classList.add('z20');
+      panelElectroImgClass[i].style.opacity = '1';
+      return;
     }
   }
 }
+  /* /электро */
+  /* мобильная электро */
+  var panelElectroLabelMob = document.getElementById('panelElectroLabelMob');
+  var panelElectroLabelMobClass = document.getElementsByClassName('panelElectroLabelMob');
+  var panelElectroImgClass = document.getElementsByClassName('panelElectroImg');
+
+  panelElectroLabelMob.onclick = function(event) {
+    var target = event.target;
+    for(var i=0; i<panelElectroLabelClass.length; i++) {
+      panelElectroLabelMobClass[i].classList.remove('z20');
+      panelElectroImgClass[i].style.opacity = '0';
+    }
+    for(var i=0; i<panelElectroLabelClass.length; i++) {
+      if(panelElectroLabelMobClass[i] == target) {
+        panelElectroLabelMobClass[i].classList.add('z20');
+        panelElectroImgClass[i].style.opacity = '1';
+        return;
+      }
+    }
+  }
+  /* /мобильная электро */
+
+  /* газ */
+var panelLabelGas = document.getElementById('panelLabelGas');
+var panelLabelGasClass = document.getElementsByClassName('panelLabelGas');
+var panelImgGas = document.getElementsByClassName('panelImgGas');
+
+panelLabelGas.onclick = function(event) {
+  var target = event.target;
+  for(var i=0; i<panelLabelGasClass.length; i++) {
+    panelLabelGasClass[i].classList.remove('z20');
+    panelImgGas[i].style.opacity = '0';
+  }
+  for(var i=0; i<panelLabelGasClass.length; i++) {
+    if(panelLabelGasClass[i] == target) {
+      panelLabelGasClass[i].classList.add('z20');
+      panelImgGas[i].style.opacity = '1';
+    }
+  }
+}
+  /* /газ */
+  /* модильная газ */
+  var panelGasLabelMob = document.getElementById('panelGasLabelMob');
+  var panelGasLabelMobClass = document.getElementsByClassName('panelGasLabelMob');
+  var panelImgGas = document.getElementsByClassName('panelImgGas');
+
+  panelGasLabelMob.onclick = function(event) {
+    var target = event.target;
+    for(var i=0; i<panelLabelGasClass.length; i++) {
+      panelGasLabelMobClass[i].classList.remove('z20');
+      panelImgGas[i].style.opacity = '0';
+    }
+    for(var i=0; i<panelLabelGasClass.length; i++) {
+      if(panelGasLabelMobClass[i] == target) {
+        panelGasLabelMobClass[i].classList.add('z20');
+        panelImgGas[i].style.opacity = '1';
+      }
+    }
+  }
+
+
+  /* /модильная газ */
+
 
 /* /В нужном цвете - переключатель */
