@@ -141,7 +141,7 @@ $(document).ready(function(){
 });
 /* /Слайдер */
 
-/* В нужном цвете - переключатель */
+/* В нужном цвете - переключатель - Панели */
   /* электро */
 var panelElectroLabel = document.getElementById('panelElectroLabel');
 var panelElectroLabelClass = document.getElementsByClassName('panelElectroLabel');
@@ -220,9 +220,89 @@ panelLabelGas.onclick = function(event) {
       }
     }
   }
-
-
   /* /модильная газ */
+/* /В нужном цвете - переключатель - Панели */
 
+/* В нужном цвете - переключатель - Шкафы */
+  /* Электро */
+var shkafElectrolabels = document.getElementById('shkafElectrolabels');
+var shkafElectrolabel = document.getElementsByClassName('shkafElectrolabels');
+var shkafElectroImg = document.getElementsByClassName('shkaf-electro-img');
+shkafElectrolabels.onclick = function(event) {
+  var target = event.target;
+  if(target.tagName !== 'IMG') return;
+  for(var i=0; i<shkafElectrolabel.length; i++) {
+    shkafElectrolabel[i].classList.remove('z20');
+    shkafElectroImg[i].style.opacity = '0';
+  }
+  for(var i=0; i<shkafElectrolabel.length; i++) {
+    if(shkafElectrolabel[i] == target) {
+      shkafElectrolabel[i].classList.add('z20');
+      shkafElectroImg[i].style.opacity = '1';
+      return;
+    }
+  }
+}
+  /* /Электро */
+  /* Электро - планшетная */
+  var shkafElectrolabelsP = document.getElementById('shkafElectrolabels-p');
+  var shkafElectrolabelP = document.getElementsByClassName('shkafElectrolabels-p');
+  var shkafElectroImg = document.getElementsByClassName('shkaf-electro-img');
+  shkafElectrolabelsP.onclick = function(event) {
+    var target = event.target;
+    if(target.tagName !== 'IMG') return;
+    for(var i=0; i<shkafElectrolabelP.length; i++) {
+      shkafElectrolabelP[i].classList.remove('z20');
+      shkafElectroImg[i].style.opacity = '0';
+    }
+    for(var i=0; i<shkafElectrolabelP.length; i++) {
+      if(shkafElectrolabelP[i] == target) {
+        shkafElectrolabelP[i].classList.add('z20');
+        shkafElectroImg[i].style.opacity = '1';
+        return;
+      }
+    }
+  }
+  /* /Электро - планшетная */
 
-/* /В нужном цвете - переключатель */
+  /* Газовая */
+var shkafGasLabels = document.getElementById('shkafGasLabels');
+var shkafGasLabel = document.getElementsByClassName('shkafGasLabel');
+var shkafGasImg = document.getElementsByClassName('shkafGasImg');
+shkafGasLabels.onclick = function(event) {
+  var target = event.target;
+  if(target.tagName !== 'IMG') return;
+  for(var i=0; i<shkafGasLabel.length; i++) {
+    shkafGasLabel[i].classList.remove('z20');
+    shkafGasImg[i].style.opacity = '0';
+  }
+  for(var i=0; i<shkafGasLabel.length; i++) {
+    if(shkafGasLabel[i] == target) {
+      shkafGasLabel[i].classList.add('z20');
+      shkafGasImg[i].style.opacity = '1';
+      return;
+    }
+  }
+}
+  /* /Газовая */
+  /* Газовая - планшетная */
+  var shkafGasLabelsP = document.getElementById('shkafGasLabelsP');
+  var shkafGasLabelP = document.getElementsByClassName('shkafGasLabelsP');
+  var shkafGasImg = document.getElementsByClassName('shkafGasImg');
+  shkafGasLabelsP.onclick = function(event) {
+    var target = event.target;
+    if(target.tagName !== 'IMG') return;
+    for(var i=0; i<shkafGasLabelP.length; i++) {
+      shkafGasLabelP[i].classList.remove('z20');
+      shkafGasImg[i].style.opacity = '0';
+    }
+    for(var i=0; i<shkafGasLabelP.length; i++) {
+      if(shkafGasLabelP[i] == target) {
+        shkafGasLabelP[i].classList.add('z20');
+        shkafGasImg[i].style.opacity = '1';
+        return;
+      }
+    }
+  }
+  /* /Газовая - планшетная */
+/* /В нужном цвете - переключатель - Шкафы */

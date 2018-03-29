@@ -55,19 +55,26 @@
 	text-align center
 
 	/* Электрический */
+.shkaf__content-shkaf-1
+	position relative
+	width 100%
+	max-width 484px
 .shkaf__content-shkafi
 	position relative
-	height 600px
+	// height 600px
 .shkaf__content-shkaf
 	position absolute
+	opacity 0
 	left 50%
-	display none
+	top 0
 	width 100%
 	max-width 484px
 	transform translateX(-50%)
+	transition .2s ease
 .shkaf__content-shkaf-show
-	display block
-
+	position relative
+.shkaf-electro-img
+	transition .2s ease
 .shkaf__content-col-title
 	margin-top 30px
 	font-size 30px
@@ -109,9 +116,9 @@
 	// 	font-size 5.3vw
 	.shkaf__content-arrow
 		display none
+@media screen and (max-width 1000px)
 	.shkaf__content-btns-ttl
 		display none
-@media screen and (max-width 1000px)
 	.shkaf__content-col
 		width 100%
 	.shkaf__content
@@ -123,20 +130,22 @@
 	.shkaf__content-title
 		font-size 3.3em
 	.shkaf__content-shkafi
-		height 750px
+		// height 750px
 	.shkaf__content-shkafi:after
 		position relative
 		display block
-		height 44em
+		// height 44em
 		content ''
 	/* Выбор цвета(планшетный) */
 	.shkaf__content-btns
 		display none
 	.shkaf__content-shkafi-btns
-		position absolute
+		// position absolute
 		bottom 3em
 		display block
 		width 100%
+		margin-top -55px
+		margin-bottom 40px
 	.shkaf__content-shkafi-btns-ttl
 		margin-bottom 1em
 		font-size 30px
@@ -148,8 +157,8 @@
 @media screen and (max-width 470px)
 	.shkaf__content-shkafi:after
 		font-size 3.8vw
-	.shkaf__content-shkafi
-		height inherit
+	// .shkaf__content-shkafi
+	// 	height inherit
 @media screen and (max-width 390px)
 	.shkaf__content-shkafi:after
 		font-size 4vw
